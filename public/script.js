@@ -74,7 +74,8 @@ const scrollToBottom = () => {
     d.scrollTop(d.prop("scrollHeight"));
 }
 
-// Mic
+// Microphone
+
 const muteUnmute = () => {
     const enabled = myVideoStream.getAudioTracks()[0].enabled;
     if (enabled) {
@@ -102,7 +103,7 @@ const setUnmuteButton = () => {
     document.querySelector('.main__mute_button').innerHTML = html;
 }
 
-//Cam
+//Camera
 
 const playStop = () => {
     let enabled = myVideoStream.getVideoTracks()[0].enabled;
